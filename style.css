@@ -418,6 +418,38 @@ nav a.active {
     box-shadow: var(--shadow-hover);
 }
 
+@media (max-width: 767px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .history-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .history-text {
+        order: 1;
+    }
+
+    .stats-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 1.6rem;
+    }
+
+    .history-text p {
+        font-size: 0.95rem;
+    }
+
+    .milestone-badge {
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
 .stat-number {
     font-size: 2.5rem;
     font-weight: 800;
