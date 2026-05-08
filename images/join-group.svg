@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="joinGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d6a4f" />
+      <stop offset="100%" stop-color="#40916c" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="40" fill="#f8faf9" />
+  <path fill="url(#joinGrad)" d="M190 320c-34 0-60-26-60-60s26-60 60-60h420c34 0 60 26 60 60s-26 60-60 60H190z" opacity="0.23" />
+  <circle cx="250" cy="190" r="70" fill="#fff" stroke="#d8e2dc" stroke-width="12" />
+  <circle cx="390" cy="210" r="60" fill="#fff" stroke="#d8e2dc" stroke-width="12" />
+  <circle cx="530" cy="190" r="70" fill="#fff" stroke="#d8e2dc" stroke-width="12" />
+  <path d="M240 220c20 0 40-18 40-38s-20-38-40-38c-20 0-40 18-40 38s20 38 40 38z" fill="#2d6a4f" />
+  <path d="M520 220c20 0 40-18 40-38s-20-38-40-38c-20 0-40 18-40 38s20 38 40 38z" fill="#2d6a4f" />
+  <path d="M340 250c24 0 44-18 44-40s-20-40-44-40-44 18-44 40 20 40 44 40z" fill="#95d5b2" />
+  <path d="M350 280c28 0 52-22 52-50s-24-50-52-50-52 22-52 50 24 50 52 50z" fill="#40916c" opacity="0.85" />
+  <path d="M290 300h220" stroke="#2d6a4f" stroke-width="18" stroke-linecap="round" />
+</svg>

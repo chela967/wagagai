@@ -1,0 +1,76 @@
+<!-- ===== WAGAGAI SACCO - SHARED FOOTER ===== -->
+<!-- Loaded dynamically by components.js into every page -->
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Wagagai Coffee Farmers SACCO</h3>
+                <p>Registered under Cooperative Statute 2024</p>
+                <p>Registration Certificate No: 12133/RCS</p>
+                <p>Serving districts: Kapchorwa, Kween, Bukwo, Sironko, Bulambuli, Mbale</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="loans.html">Loans</a>
+                <a href="join.html">Join</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wagagai Coffee Farmers SACCO. All rights reserved.</p>
+            <p>Member owned • Member controlled • Member governed</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ===== SHARED MODAL (Join Application) ===== -->
+<div id="applicationModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+        <span class="close" aria-label="Close">&times;</span>
+        <h3 id="modalTitle">Apply to Join Wagagai SACCO</h3>
+        <form id="applicationForm"
+              action="https://formsubmit.co/wagagai.farmerssacco@gmail.com"
+              method="POST">
+            <input type="hidden" name="_subject" value="New SACCO Membership Application">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://chela967.github.io/wagagai-sacco/thankyou.html">
+            <div class="form-group">
+                <label for="modalName">Full Name</label>
+                <input id="modalName" type="text" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="modalPhone">Phone Number</label>
+                <input id="modalPhone" type="tel" name="phone" placeholder="e.g. 0706751553" required>
+            </div>
+            <div class="form-group">
+                <label for="modalDistrict">District</label>
+                <select id="modalDistrict" name="district" required>
+                    <option value="">Select District</option>
+                    <option>Kapchorwa</option>
+                    <option>Kween</option>
+                    <option>Bukwo</option>
+                    <option>Sironko</option>
+                    <option>Bulambuli</option>
+                    <option>Mbale</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="modalAccountType">Account Type</label>
+                <select id="modalAccountType" name="account_type" required>
+                    <option>Individual Account</option>
+                    <option>Group Savings Account</option>
+                    <option>TOTO Savings Account</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="modalMessage">Message (Optional)</label>
+                <textarea id="modalMessage" name="message" rows="3"
+                          placeholder="Any additional details..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+        </form>
+    </div>
+</div>

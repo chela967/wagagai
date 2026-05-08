@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Loan calculator for Wagagai Coffee Farmers SACCO to estimate interest and repayment amounts.">
+    <title>Loan Calculator | Wagagai Coffee Farmers SACCO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="site-header"></div>
+
+    <section class="calculator">
+        <div class="container">
+            <h2 class="section-title">Loan Calculator</h2>
+            <p class="section-subtitle">Calculate your expected interest and repayment</p>
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="loanAmount">Loan Amount (UGX)</label>
+                        <input type="number" id="loanAmount" value="1000000" step="100000" min="100000">
+                    </div>
+                    <div class="form-group">
+                        <label for="loanType">Loan Type</label>
+                        <select id="loanType">
+                            <option value="quick">Quick Loan – 5% flat (1 month)</option>
+                            <option value="ordinary">Ordinary Loan – 3% declining (3 months)</option>
+                            <option value="agriculture">Agriculture Loan – 3% flat (6 months + 1 month grace)</option>
+                            <option value="business">Business Loan – 3% flat (1–6 months)</option>
+                            <option value="salary">Salary Loan – 3% flat (6 months)</option>
+                            <option value="boda">Waga Boda – 3% flat (6 months)</option>
+                            <option value="mugaga">Mugaga Loan – 3% per week (9 months)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="loanPeriod">Loan Period (Months)</label>
+                        <input type="number" id="loanPeriod" value="3" min="1" max="9">
+                    </div>
+                    <div class="calculator-result" id="calculatorResult"></div>
+                </div>
+
+                <div class="calculator-info">
+                    <div class="info-box">
+                        <i class="fas fa-info-circle"></i>
+                        <h4>Additional Requirements for Any Loan</h4>
+                        <ul>
+                            <li>Active SACCO account</li>
+                            <li>Shares: at least 5% of loan amount</li>
+                            <li>Savings: 3% of loan amount</li>
+                            <li>2 guarantors (1 from SACCO)</li>
+                            <li>LC1 recommendation (area &amp; residential)</li>
+                            <li>Collateral</li>
+                            <li>Completed loan application form</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

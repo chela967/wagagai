@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="coffeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d6a4f" />
+      <stop offset="100%" stop-color="#1b4332" />
+    </linearGradient>
+    <radialGradient id="beanGrad" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#8b4513" />
+      <stop offset="100%" stop-color="#654321" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#coffeGrad)" stroke="#fff" stroke-width="3"/>
+  
+  <!-- Coffee cup -->
+  <path d="M 60 70 L 55 130 Q 55 140 65 140 L 135 140 Q 145 140 145 130 L 140 70 Z" fill="#d4a574" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Cup rim -->
+  <ellipse cx="100" cy="70" rx="42" ry="12" fill="#e8c4a0" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Coffee inside -->
+  <path d="M 62 85 L 57 135 Q 57 138 65 138 L 135 138 Q 143 138 143 135 L 138 85 Z" fill="#6b4423" opacity="0.8"/>
+  
+  <!-- Coffee foam/crema -->
+  <ellipse cx="100" cy="80" rx="35" ry="8" fill="#c9a876" opacity="0.9"/>
+  
+  <!-- Coffee beans (left) -->
+  <ellipse cx="70" cy="50" rx="16" ry="20" fill="url(#beanGrad)" transform="rotate(-25 70 50)"/>
+  <path d="M 70 35 Q 75 45 70 55" stroke="#3d2817" stroke-width="1.5" fill="none"/>
+  
+  <!-- Coffee beans (right) -->
+  <ellipse cx="130" cy="45" rx="16" ry="20" fill="url(#beanGrad)" transform="rotate(25 130 45)"/>
+  <path d="M 130 30 Q 135 40 130 50" stroke="#3d2817" stroke-width="1.5" fill="none"/>
+  
+  <!-- Leaf accent (top left) -->
+  <path d="M 45 40 Q 40 35 45 30 Q 50 35 45 40" fill="#40916c" opacity="0.8"/>
+  <path d="M 45 30 Q 45 25 48 22" stroke="#40916c" stroke-width="1" fill="none"/>
+  
+  <!-- Leaf accent (top right) -->
+  <path d="M 155 38 Q 160 33 165 38 Q 160 43 155 38" fill="#40916c" opacity="0.8"/>
+  <path d="M 165 38 Q 170 35 173 32" stroke="#40916c" stroke-width="1" fill="none"/>
+  
+  <!-- Handle -->
+  <path d="M 145 90 Q 165 100 160 130" fill="none" stroke="#d4a574" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Decorative circle border with text hint -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+</svg>
