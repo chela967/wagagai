@@ -2,6 +2,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
@@ -10,7 +11,12 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('.'));
+app.use(express.static(path.join(__dirname)));
+
+// Serve the site root explicitly for Vercel / Express
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // Email Configuration
 const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL || 'wagagisacco@gmail.com'; // Change this to your email
