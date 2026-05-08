@@ -418,7 +418,7 @@ nav a.active {
     box-shadow: var(--shadow-hover);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .section {
         padding: 40px 0;
     }
@@ -433,11 +433,13 @@ nav a.active {
     }
 
     .stats-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        width: 100%;
     }
 
     .stat-card {
         padding: 1.6rem;
+        width: 100%;
     }
 
     .history-text p {
