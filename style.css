@@ -1026,9 +1026,15 @@ footer {
     margin-bottom: 30px;
 }
 
+.footer-info h3,
+.footer-info p,
+.footer-bottom p,
+.footer-links a {
+    color: white;
+}
+
 .footer-links a {
     display: block;
-    color: white;
     text-decoration: none;
     margin: 10px 0;
 }

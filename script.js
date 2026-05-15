@@ -69,7 +69,7 @@ const loanProducts = [
         repayment: "Monthly",
         category: "individual",
         icon: "fa-chart-simple",
-        image: "images/sacco6 (6).jpeg"
+        image: "images/mugaga.png"
     },
     {
         name: "VSLA Group Loan",
